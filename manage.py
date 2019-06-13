@@ -2,6 +2,10 @@
 import os
 import sys
 
+dir = os.path.dirname(os.path.abspath(__file__))
+dir = os.path.join(dir, 'VueDjangoFrameWorkShop')
+sys.path.insert(0, dir)
+
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "VueDjangoFrameWorkShop.settings")
     try:
